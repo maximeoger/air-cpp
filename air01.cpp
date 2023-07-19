@@ -22,7 +22,8 @@ vector<string> split(char str[], char sep) {
 
 int main(int argc, char* argv[]) {
   vector<string> checks;
-  checks.push_back(AT_LEAST_ONE_ARGUMENT);
+  checks.push_back(ONLY_ONE_ARGUMENT);
+  checks.push_back(ONLY_STRINGS);
   
   try {
     checkArgs(argc, argv, checks);
